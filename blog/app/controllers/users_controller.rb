@@ -8,7 +8,7 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
     if @user.save
-        redirect_to articles_path, notice: 'User successfully added.'
+      redirect_to articles_path, notice: 'User successfully added.'
     else
       render action: :new
     end
@@ -32,6 +32,6 @@ class UsersController < ApplicationController
   end
 
   def user_params
-    params
+    params.require(:user).permit(:email, :password, :password_confirmation)
   end
 end
