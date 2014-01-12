@@ -8,5 +8,7 @@ class Comment < ActiveRecord::Base
       errors.add(:article_id, "is not published yet") if article && !article.published?
   end
 
-  
+  def email_article_author
+    puts "We will notify #{article.user.email} in Chapter 9"
+  end
 end
