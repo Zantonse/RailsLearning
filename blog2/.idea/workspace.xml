@@ -26,37 +26,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <file leaf-file-name="routes.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config/routes.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="62" selection-start="396" selection-end="396" vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="391">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_article.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/articles/_article.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="9" selection-start="297" selection-end="297" vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="255">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_comment.html.erb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/comments/_comment.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="0" selection-start="271" selection-end="271" vertical-scroll-proportion="0.22633137" vertical-offset="0" max-vertical-offset="676">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="new.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/comments/new.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="9" selection-start="403" selection-end="403" vertical-scroll-proportion="-10.461538" vertical-offset="0" max-vertical-offset="374">
+            <state line="9" column="2" selection-start="301" selection-end="301" vertical-scroll-proportion="0.20652173" vertical-offset="1" max-vertical-offset="1224">
               <folding />
             </state>
           </provider>
@@ -85,13 +58,13 @@
         <option value="$PROJECT_DIR$/app/views/users/edit.html.erb" />
         <option value="$PROJECT_DIR$/app/views/users/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
-        <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/controllers/comments_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/users/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/views/articles/_article.html.erb" />
         <option value="$PROJECT_DIR$/app/views/comments/new.html.erb" />
         <option value="$PROJECT_DIR$/app/views/comments/_comment.html.erb" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
       </list>
     </option>
   </component>
@@ -185,6 +158,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="users" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blog2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blog2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -773,13 +764,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="23" selection-start="113" selection-end="113" vertical-scroll-proportion="0.06929348" vertical-offset="0" max-vertical-offset="1156">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="62" selection-start="396" selection-end="396" vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="391">
@@ -803,7 +787,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/comments/_comment.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="271" selection-end="271" vertical-scroll-proportion="0.22633137" vertical-offset="0" max-vertical-offset="676">
+        <state line="9" column="0" selection-start="271" selection-end="271" vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="255">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="2" selection-start="301" selection-end="301" vertical-scroll-proportion="0.20652173" vertical-offset="1" max-vertical-offset="1224">
           <folding />
         </state>
       </provider>
