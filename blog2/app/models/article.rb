@@ -22,5 +22,4 @@ class Article < ActiveRecord::Base
     return false unless owner.is_a?(User)
     user == owner
   end
-
 end
