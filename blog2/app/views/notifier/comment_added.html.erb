@@ -1,0 +1,8 @@
+<html>
+<body>
+<p>
+  Someone added ac omment to an article <i><%= @article.title %></i>.
+  Go read it: <%= link_to @article.title, article_url(@article, :host => 'localhost:3000') %>
+</p>
+</body>
+</html>
