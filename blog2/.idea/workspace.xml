@@ -29,7 +29,7 @@
       <file leaf-file-name="article_test.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/models/article_test.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="0" selection-start="724" selection-end="724" vertical-scroll-proportion="0.68188107" vertical-offset="0" max-vertical-offset="723">
+            <state line="28" column="20" selection-start="807" selection-end="807" vertical-scroll-proportion="0.65836793" vertical-offset="0" max-vertical-offset="731">
               <folding />
             </state>
           </provider>
@@ -671,7 +671,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/models/article_test.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="0" selection-start="724" selection-end="724" vertical-scroll-proportion="0.68188107" vertical-offset="0" max-vertical-offset="723">
+        <state line="28" column="20" selection-start="807" selection-end="807" vertical-scroll-proportion="0.65836793" vertical-offset="0" max-vertical-offset="731">
           <folding />
         </state>
       </provider>
