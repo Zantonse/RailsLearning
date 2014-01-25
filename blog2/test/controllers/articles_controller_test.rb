@@ -8,10 +8,12 @@ class ArticlesControllerTest < ActionController::TestCase
   test "should get index" do
     get :index
     assert_response :success
+    assert_template 'index'
     assert_not_nil assigns(:articles)
   end
 
   test "should get new" do
+    login_as(:eugene)
     get :new
     assert_response :success
   end
@@ -25,8 +27,12 @@ class ArticlesControllerTest < ActionController::TestCase
   end
 
   test "should show article" do
-    get :show, id: @article
+    get :show, id: @article.to_param
+
     assert_response :success
+    assert_template 'show'
+    assert_not_nil assigns(:article)
+    assert assigns(:article).valid?
   end
 
   test "should get edit" do
