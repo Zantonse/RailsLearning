@@ -19,10 +19,12 @@ class ArticlesControllerTest < ActionController::TestCase
   end
 
   test "should create article" do
+    login_as(:eugene)
     assert_difference('Article.count') do
-      post :create, article: { body: @article.body, excerpt: @article.excerpt, location: @article.location, published_at: @article.published_at, title: @article.title }
+      post :create, article: { :title => 'Post title',
+                               :body => 'Lorem ipsum..' }
     end
-
+    assert_response :redirect
     assert_redirected_to article_path(assigns(:article))
   end
 
@@ -36,20 +38,25 @@ class ArticlesControllerTest < ActionController::TestCase
   end
 
   test "should get edit" do
-    get :edit, id: @article
+    login_as(:eugene)
+    get :edit, id: @article.to_param
     assert_response :success
   end
 
   test "should update article" do
-    patch :update, id: @article, article: { body: @article.body, excerpt: @article.excerpt, location: @article.location, published_at: @article.published_at, title: @article.title }
+    login_as(:eugene)
+    patch :update, id: @article.to_param, :article => { :title => 'New Title' }
     assert_redirected_to article_path(assigns(:article))
   end
 
   test "should destroy article" do
+    login_as(:eugene)
+    assert_nothing_raised {Article.find(@article.to_param)}
     assert_difference('Article.count', -1) do
-      delete :destroy, id: @article
+      delete :destroy, id: @article.to_param
     end
-
+    assert_response :redirect
     assert_redirected_to articles_path
+    assert_raise(ActiveRecord::RecordNotFound) {Article.find(@article.to_param)}
   end
 end
