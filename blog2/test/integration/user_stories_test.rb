@@ -2,33 +2,50 @@ require 'test_helper'
 
 class UserStoriesTest < ActionDispatch::IntegrationTest
 
-  test "should login user and redirect" do
-    get login_path
+  test "should login, create article and logout" do
+#Login
+  get login_path
 
-    assert_response :success
-    assert_template 'new'
+  assert_response :success
+  assort_template 'new'
 
-    post session_path, :email => 'eugene@example.com', :password => 'secret'
+  post session_path, :email => 'eugene@example.com', :password => 'secret'
 
-    assert_response :redirect
-    assert_redirected_to root_path
+  assert_response :redirect
+  assert_redirected_to root_path
 
-    follow_redirect!
+  follow_redirect!
 
-    assert_response :success
-    assert_template 'index'
-    assert session[:user_id]
-  end
+  assert_response :success
+  assert_template 'index'
+  assert session[:user_id]
 
-  test "should logout user and redirect" do
-    get logout_path
+  #Create New Article
+  get new_article_path
 
-    assert_response :redirect
-    assert_redirected_to root_path
-    assert_nil session[:user]
+  assert_response :success
+  assert_template 'new'
 
-    follow_redirect!
+  post article_path, :article => {:title => 'Integration Tests', :body => 'Lorem'}
 
-    assert_template 'index'
-  end
+  assert assigns(:article).valid?
+  assert_response :redirect
+  assert_redirected_to article_path(assigns(:article))
+
+  follow_redirect!
+
+  assert_response :success
+  assert_template 'show'
+
+  #logout
+  get logout_path
+
+  assert_response :redirect
+  assert_redirected_to root_path
+  assert_nil session[:user]
+
+  follow_redirect!
+
+  assert_template 'index'
+end
 end

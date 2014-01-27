@@ -56,7 +56,7 @@
       <file leaf-file-name="user_stories_test.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/integration/user_stories_test.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="0" selection-start="457" selection-end="457" vertical-scroll-proportion="0.508547" vertical-offset="0" max-vertical-offset="702">
+            <state line="50" column="3" selection-start="993" selection-end="993" vertical-scroll-proportion="0.85470086" vertical-offset="250" max-vertical-offset="952">
               <folding />
             </state>
           </provider>
@@ -755,7 +755,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/integration/user_stories_test.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="0" selection-start="457" selection-end="457" vertical-scroll-proportion="0.508547" vertical-offset="0" max-vertical-offset="702">
+        <state line="50" column="3" selection-start="993" selection-end="993" vertical-scroll-proportion="0.85470086" vertical-offset="250" max-vertical-offset="952">
           <folding />
         </state>
       </provider>
